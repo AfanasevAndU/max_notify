@@ -40,9 +40,6 @@ app.use((req, res) => {
     });
 });
 
-/**
- * Start server
- */
 app.listen(config.PORT, () => {
     logger.info(`🚀 MAX notifier started on port ${config.PORT}`);
 });

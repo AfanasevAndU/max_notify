@@ -6,7 +6,6 @@ const bot = new Bot(config.MAX_BOT_TOKEN);
 
 export async function sendMessage(text) {
     try {
-        // 💥 ВАЖНО: SDK ожидает (chatId, text), НЕ объект
         const res = await bot.api.sendMessageToChat(
             config.MAX_CHAT_ID,
             String(text)
